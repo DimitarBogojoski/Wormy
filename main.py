@@ -149,7 +149,7 @@ def generateObstacles(wormCoords):
     return obstacles
 
 
-# Ako slednata kelija e prepreka
+# Proverka na preklopuvacka kelija
 def isObstacleCell(x, y):
     for obs in OBSTACLES:
         if obs['x'] == x and obs['y'] == y:

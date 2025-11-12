@@ -2,7 +2,7 @@
 import random, pygame, sys
 from pygame.locals import *
 
-FPS = 8
+FPS = 10
 WINDOWWIDTH = 640
 WINDOWHEIGHT = 480
 CELLSIZE = 20
@@ -96,8 +96,8 @@ def runGame():
 
         # Sudir so prepreka
         if isObstacleCell(newHead['x'], newHead['y']):
-            return
-
+            drawFrame(wormCoords, apple)
+            continue
 
         if newHead['x'] == apple['x'] and newHead['y'] == apple['y']:
             wormCoords.insert(0, newHead)
